@@ -1,6 +1,6 @@
 //🟢setup Function - will run once
 setup = function() {
-    size(600, 400);
+    size(1000, 700);
     background(255,255,255,0);
     
     drawFish(200, 200, color(200,0,200)); 
@@ -21,7 +21,7 @@ mouseClicked = function(){
 var drawFish = function(fishX, fishY, fishColor){
   textSize(80);
   fill(fishColor);
-  text("𓆝", fishX, fishY);
+  //text("𓆝", fishX, fishY);
 };
 
 

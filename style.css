@@ -4,9 +4,9 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(250,218,221);
   text-align: center;
-  color: navy;
+  color: rgb(214, 0, 107);
   margin: auto;
   font-family: water;
 }
@@ -16,8 +16,9 @@ h1{
 }
 
 #myCanvas {
-  background-image: url("https://seaviewinfo.com/wp-content/uploads/2018/07/SeaScape.jpg");
-  background-size: 600px 400px;
+  background-color: ghostwhite;
+  background-image: url("https://www.shutterstock.com/image-vector/full-bloom-pink-sakura-tree-260nw-561066430.jpg");
+  background-size: 1000px 800px;
   border-radius: 300px;
   border: 5px solid white;
 }
