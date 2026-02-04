@@ -2,16 +2,28 @@
 setup = function() {
     size(1000, 700);
     background(255,255,255,0);
-    
-    drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
 };
+
+var leftPoint = 400;
+var pointMove = 1;
 
 //🟢draw Function - will run on repeat
-draw = function(){
+draw = function() {
+background(255,255,255,0);
+line(400,140,leftPoint,500)
+line(600,140,leftPoint + 200,500)
+fill(100,57,65)
+rect(leftPoint - 20,500,240,20)
 
+leftPoint = leftPoint + pointMove;
+
+if (leftPoint == 480) { 
+  pointMove = - 1
 };
 
+if (leftPoint == 320)
+  pointMove = + 1
+}
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
 
