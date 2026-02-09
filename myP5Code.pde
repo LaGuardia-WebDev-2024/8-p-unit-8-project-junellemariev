@@ -27,9 +27,19 @@ if (leftPoint == 370){
 };
 
 
-drawHeart(500,-50 + heartFall);
-drawHeart(800,-150 + heartFall);
-drawHeart(300,-250 + heartFall);
+drawHeart(800,-50 + heartFall);
+drawHeart(300,-150 + heartFall);
+drawHeart(500,-250 + heartFall);
+drawHeart(600,-350 + heartFall);
+drawHeart(100,-450 + heartFall);
+drawHeart(700,-550 + heartFall);
+drawHeart(400,-650 + heartFall);
+drawHeart(200,-750 + heartFall);
+drawHeart(900,-850 + heartFall);
+drawHeart(1000,-950 + heartFall);
+drawHeart(800,-50 + heartFall);
+drawHeart(300,-150 + heartFall);
+drawHeart(500,-250 + heartFall);
 drawHeart(600,-350 + heartFall);
 drawHeart(100,-450 + heartFall);
 heartFall ++
