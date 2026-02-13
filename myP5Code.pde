@@ -11,9 +11,11 @@ var pointMove = 0.5;
 var heartFall = 0;
 var leftbirdMove = 1;
 
-//🟢draw Function - will run on repeat
+//the swing on the tree + calling everything else
 draw = function() {
     background(255,255,255,0);
+    fill(0,0,0);
+    stroke(0);
     line(400,140,leftPoint,500);
     line(600,140,leftPoint + 200,500);
     fill(100,57,65);
@@ -29,9 +31,10 @@ if (leftPoint == 370){
   pointMove = + 1
 };
 
-drawPond(500,660)
+drawGrass(500,660);
 
 drawLeftbird(0 + leftbirdMove, 45);
+drawLeftbird(-20 + leftbirdMove, 145);
 
 drawHeart(800,-50 + heartFall);
 drawHeart(300,-150 + heartFall);
@@ -53,37 +56,32 @@ leftbirdMove ++
 }
 
 
-//🟢mouseClicked Function - will run when mouse is clicked
+//planting flowers
 mouseClicked = function(){
-
+    textSize(40);
+    fill(255,0,0);
+    text("🌹",mouseX,mouseY);
 }
 
-//🟡drawHeart Function - will run when called
+//hearts fallingg
 var drawHeart = function(heartX,heartY){
     textSize(80);
     fill(210,100,102);
     text("♥", heartX, heartY);
 };
 
+//the little dove
 var drawLeftbird = function(birdX,birdY) {
     textSize(70);
     fill(0,0,0);
     text("🕊",birdX,birdY);
 };
 
-var drawPond = function(pondX,pondY) {
-    fill(174, 198, 207);
-    ellipse(pondX,pondY,1200,200)
+//the grass
+var drawGrass = function(grassX,grassY) {
+    fill(193, 225, 193);
+    stroke(193, 225, 193);
+    ellipse(grassX,grassY,1200,200);
 }
 
-
-//umm okay so this right bird unction is not working im saving the code here tho
-//drawRightbird(1300 + rightbirdMove, 50);
-//rightbirdMove --
-//var drawRightbird = function(birdX,birdY) {
-//    textSize(70);
-//    fill(0,0,0,255);
-//    scale(-1,1);
-//    text("🕊",birdX,birdY);
-//}
 

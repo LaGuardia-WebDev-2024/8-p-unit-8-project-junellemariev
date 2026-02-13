@@ -9,7 +9,7 @@ body {
   color: rgb(214, 0, 107);
   margin: auto;
   font-family: water;
-   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='48' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🌹</text></svg>") 16 0, auto;
+   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='90' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🌹</text></svg>") 16 0, auto;
 }
 
 h1{
